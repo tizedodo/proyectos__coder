@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trenzas Africanas Argentinas</title>
-    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/normalize.css">
 </head>
@@ -13,13 +14,13 @@
     <header class="nav">
         <nav class="nav__container">
             <img class="nav__logo" src="./picture/logo.png" alt="logo de Trenzas Africanas Argentinas">
-            <h1 class="nav__title">Trenzas Africanas Argentinas</h1>
+            <h1 class="nav__title fs-1 fw-bold">Trenzas Africanas Argentinas</h1>
             <div class="nav__resp">
             <label for="menu" class="nav__menu">
                 <img src="./picture/icon-hamburger.svg" alt="menu" class="nav__hamburger">
             </label>
             <input type="checkbox" id="menu" class="nav__input">
-            <ul class="nav__links">
+            <ul class="nav__links navbar-nav">
                 <li><a href="./index.html" class="nav__link">Inicio</a></li>
                 <li><a href="./page/sacar__turno.html" class="nav__link">Sacar Turno</a></li>
                 <li><a href="./page/galeria.html" class="nav__link">Galeria</a></li>
@@ -29,35 +30,55 @@
             </div>
     </nav>
     </header>
-    <main class="main">
-        <section class="services__container">
-            <figure class="services__picture"><img src="./picture/services/BoxBraids.jpeg" alt="" class="services__img"></figure>
-            <div>
-                <h2 class="services__title">Box Braids</h2>
-                <p class="services__paragraph">Como su nombre lo indica, este trenzado consiste 
+    
+    <section class="container " style="max-width: 100%;">
+        <div class="mb-5 mx-auto services__container" style="max-width: 60%;">
+            <div class="row g-0">
+            <div class="col-md-4">
+                <img src="./picture/services/BoxBraids.jpeg" class="mb-2 img-fluid rounded" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body ms-2">
+                <h2 class="card-title fs-1 fw-bold mb-2">Box Braids</h2>
+                <p class="card-text fs-4">Como su nombre lo indica, este trenzado consiste 
                     en una serie de trenzas francesas de tres mechones 
-                    en una fila!<br> <br>Es el estilo más representativo de la tendencia africana, 
+                    en una fila!<br><br>Es el estilo más representativo de la tendencia africana, 
                     gracias a su capacidad de encajarse a cualquier tipo de look desde los más clásicos, hasta los más modernos y osados.
                     <br> <br>Se trata de tejer múltiples trenzas de un mismo grosor en la totalidad del cabello.</p>
+                </div>
             </div>
-        </section>
+            </div>
+        </div>
+        <div class="mb-5 mx-auto services__container" style="max-width: 60%;">
+            <div class="row g-0">
+            <div class="col-md-4">
+                <img src="./picture/services/laterales.png" class="mb-2 img-fluid rounded" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body ms-2">
+                    <h2 class="card-title fs-1 fw-bold mb-2">Trenzas laterales</h5>
+                <p class="card-text fs-4">Son trenzas tejidas de manera ordenada hacia un lado de tu cabeza, o hacia la coronilla y no hacia atrás como es costumbre. <br> <br>Pueden tejerse en su totalidad o suspenderse el tejido a nivel de coronilla para dejar el cabello suelto hacia un lado de la cabeza. <br> <br>Este estilo puede ser llevado en cualquier grosor y largo de cabello o ser acompañado de accesorios para individualizar más el look.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="mb-5 mx-auto services__container" style="max-width: 60%;">
+            <div class="row g-0">
+            <div class="col-md-4">
+                <img src="./picture/services/pegadas.png" class="mb-2 img-fluid rounded" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body ms-2">
+                    <h2 class="card-title fs-1 fw-bold mb-2">Trenzas Pegadas</h5>
+                <p class="card-text fs-4">Se trata de trenzas que se sujetan de forma muy firme al cuero cabelludo, dando lugar a líneas y formas diversas sobre este. <br> <br>Al igual que en otros peinados y estilos, tienes variedad de opciones a escoger.</p>
+                </div>
+            </div>
+            </div>
+        </div>
 
-        <section class="services__container">
-            <figure class="services__picture"><img src="./picture/services/laterales.png" alt="" class="services__img"></figure>
-            <div>
-                <h2 class="services__title">Trenzas laterales</h2>
-                <p class="services__paragraph">Son trenzas tejidas de manera ordenada hacia un lado de tu cabeza, o hacia la coronilla y no hacia atrás como es costumbre. <br> <br>Pueden tejerse en su totalidad o suspenderse el tejido a nivel de coronilla para dejar el cabello suelto hacia un lado de la cabeza. <br> <br>Este estilo puede ser llevado en cualquier grosor y largo de cabello o ser acompañado de accesorios para individualizar más el look.</p>
-            </div>
-        </section>
+    </section>
 
-        <section class="services__container">
-            <figure class="services__picture"><img src="./picture/services/pegadas.png" alt="" class="services__img"></figure>
-            <div>
-                <h2 class="services__title">Trenzas Pegadas</h2>
-                <p class="services__paragraph">Se trata de trenzas que se sujetan de forma muy firme al cuero cabelludo, dando lugar a líneas y formas diversas sobre este. <br> <br>Al igual que en otros peinados y estilos, tienes variedad de opciones a escoger.</p>
-            </div>
-        </section>
-    </main>
+
     <footer class="footer">
         <section class="footer__container">
             <div class="footer__services column1">
