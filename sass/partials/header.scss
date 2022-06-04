@@ -1,0 +1,117 @@
+.nav{
+    background-color: var(--pica-color);
+    color: white;
+
+    &__container{
+        display: flex;
+        height: 100%;
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__menu{
+        display: block;
+        cursor: pointer;
+    }
+
+
+    &__links{
+        position: fixed;
+        top: 90px;
+        bottom: 0;
+        background: #553555;
+        width: 50%;
+        right: 0;
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 100% 100%, 100% 50%, 100% 0);
+        transition: clip-path 0.2s ease-in-out;
+        list-style: none;
+    }
+
+    &__link{
+        color: #fff;
+        text-decoration: none;
+        
+    }
+
+    &__input:checked + .nav__links{
+        clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 0 99%, 0% 50%, 0 0);
+    
+    }
+
+    &__input{
+        display: none;
+    }
+
+    &__title{
+        font-size: 2rem;
+    }
+    
+}
+
+@media (min-width: 650px){
+    .nav__menu, .nav__input{
+        display: none;
+    }
+    .nav{
+        background-color: var(--pica-color);
+        height: 90px;
+        color: white;
+    }
+    
+    .nav__container{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .nav__links{
+        clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 0 99%, 0% 50%, 0 0);
+        position: inherit;
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        width: 100%;
+    }
+    
+    .nav__link{
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        --clippy:  polygon(0 0, 0 0, 0 100%, 0 100%);
+        
+    }
+    
+    .nav__link::after{
+        content:"";
+        display: block;
+        background: #fff;
+        width: 90%;
+        margin-top: 3px;
+        height: 3px;
+        clip-path: var(--clippy);
+        transition: clip-path .3s;
+    
+    }
+    
+    .nav__link:hover{
+        --clippy:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        color: #fff ;
+    }
+}
+
+
+
+
+
+
+
+

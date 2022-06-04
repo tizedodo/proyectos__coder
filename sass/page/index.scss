@@ -1,0 +1,14 @@
+.services__container{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    gap: .5rem;
+    border-radius: 15px;
+    max-width:fit-content;
+    box-shadow: 10px 10px #e4bebe;
+}
+
+.services__img{
+    width: 15rem;
+    border-radius: 10px;
+}
