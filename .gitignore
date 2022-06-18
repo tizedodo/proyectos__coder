@@ -1,2 +1,6 @@
 # Ignora la carpeta node_modules
 node_modules
+.vscode
+css/translated.css
+translated.css
+package.json
