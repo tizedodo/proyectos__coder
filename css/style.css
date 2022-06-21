@@ -409,8 +409,10 @@ template {
   margin: 0 auto;
   justify-content: center; }
 
-.footer__services-title, .column2 {
-  display: none; }
+.footer__services-title {
+  display: block;
+  justify-content: center;
+  text-align: center; }
 
 .footer__links {
   margin: 0.5em 0;
