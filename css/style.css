@@ -588,3 +588,49 @@ template {
 .main__container {
   height: 900px;
   width: 70%; }
+
+.container {
+  background: #f7c2c2;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6); }
+
+.title_pf {
+  width: 30%;
+  padding: 1.5em 1.5em;
+  margin: 1.5em auto;
+  text-align: center;
+  font-weight: 500;
+  font-size: large;
+  background: var(--pica-color);
+  border-radius: 5px;
+  color: #d7d9fa; }
+
+.container_text {
+  margin: 90px 0; }
+
+@media (min-width: 650px) {
+  .title_pf {
+    font-size: x-large;
+    font-weight: 900; } }
+
+.container {
+  background: #f7c2c2;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6); }
+
+.title_pf {
+  width: 30%;
+  padding: 1.5em 1.5em;
+  margin: 1.5em auto;
+  text-align: center;
+  font-weight: 500;
+  font-size: large;
+  background: var(--pica-color);
+  border-radius: 5px;
+  color: #d7d9fa; }
+
+.container_text {
+  margin: 90px 0; }
+
+@media (min-width: 650px) {
+  .title_pf {
+    font-size: x-large;
+    font-weight: 900; } }
