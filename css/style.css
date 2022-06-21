@@ -412,7 +412,8 @@ template {
 .footer__services-title {
   display: block;
   justify-content: center;
-  text-align: center; }
+  text-align: center;
+  color: #fff; }
 
 .footer__links {
   margin: 0.5em 0;
@@ -422,10 +423,10 @@ template {
 .footer__link {
   text-decoration: none;
   list-style: none;
-  color: #000; }
+  color: #fff; }
 
 .footer__link:hover {
-  color: white; }
+  color: #1c03ff; }
 
 .main__container {
   height: 900px;

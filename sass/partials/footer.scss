@@ -18,6 +18,7 @@
     display: block;
     justify-content: center;
     text-align: center;
+    color: #fff;
 
 }
 
@@ -29,12 +30,12 @@
 .footer__link{
     text-decoration: none;
     list-style: none;
-    color: #000;
+    color: #fff;
     
 }
 
 .footer__link:hover{
-    color: white;
+    color: rgb(28, 3, 255);
 }
 
 .main__container{
