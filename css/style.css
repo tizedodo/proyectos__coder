@@ -589,7 +589,7 @@ template {
   height: 900px;
   width: 70%; }
 
-.container {
+.pregtf {
   background: #f7c2c2;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.6); }
 
@@ -612,7 +612,7 @@ template {
     font-size: x-large;
     font-weight: 900; } }
 
-.container {
+.pregtf {
   background: #f7c2c2;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.6); }
 
