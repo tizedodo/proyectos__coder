@@ -1,0 +1,19 @@
+.tmyc{
+    &_title{
+    width: 30%;
+    padding: 1.5em 1.5em;
+    margin: 1.5em auto;
+    text-align: center;
+    font-weight: 500;
+    font-size: large;
+    background: var(--pica-color) ;
+    border-radius: 5px;
+    color: rgb(215, 217, 250);
+}
+    &_paragraph{
+        width: 100%;
+        background: #f7c2c2;
+        padding: 1.5rem;
+        box-shadow: 0 0 6px rgba(0, 0, 0, .6);
+    }
+}

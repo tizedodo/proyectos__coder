@@ -1,0 +1,56 @@
+.rstron{
+
+    width: 90%;
+    height: 900px;
+    background: #f7c2c2;
+    
+    
+
+    &_title{
+        text-align: center;
+        padding: 90px;
+
+    }
+
+    &_links{
+        list-style: none;
+        width: 50%;
+        margin: 0 auto;
+
+    }
+
+
+    &_link{
+        display: block;
+        text-decoration: none;
+        margin: 3em 0;
+        color: #ed3fed;
+    }
+
+    &_paragraph{
+        margin: 0 auto;
+        width: 50%;
+    }
+}
+
+
+
+@media (min-width: 650px){
+
+    .rstron_link{
+        display: block;
+        text-decoration: none;
+        margin: 3em 0;
+        font-size: large;
+    }
+
+    .rstron_paragraph{
+        margin: 0 auto;
+        width: 50%;
+        font-weight: 500;
+        font-size: large;
+    }
+
+
+
+}
