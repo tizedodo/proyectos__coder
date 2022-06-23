@@ -26,9 +26,11 @@ html {
 body {
   font-family: 'Raleway', sans-serif;
   background-color: var(--grayish-color);
-  display: grid;
+  display:flex; 
+  flex-direction:column; 
   grid-template-rows: repeat(3,max-content);
   gap: 2em;
+  height:100vh; margin:0;
   }
   
   /**

@@ -14,7 +14,7 @@
     <header class="nav">
         <nav class="nav__container">
             <img class="nav__logo" src="../picture/logo.png" alt="logo de Trenzas Africanas Argentinas">
-            <h1 class="nav__title fs-1 fw-bold">Trenzas Africanas Argentinas</h1>
+            <h1 class="nav__title">Trenzas Africanas Argentinas</h1>
             <div class="nav__resp">
             <label for="menu" class="nav__menu">
                 <img src="../picture/icon-hamburger.svg" alt="menu" class="nav__hamburger">
@@ -30,10 +30,42 @@
             </div>
     </nav>
     </header>
-    <main class="main__container">
 
-    </main>
-    <footer class="footer">
+<form class="form">
+    <h2 class="form_title">Dejanos tu mensaje</h2>
+
+    <div class="form_container">
+        <div class="form_group">
+            <input type="text" id="name" class="form_input" placeholder=" ">
+            <label for="name" class="form_label">Nombre:</label>
+            <span class="form_line"></span>
+        </div>
+
+        <div class="form_group">
+            <input type="text" id="email" class="form_input" placeholder=" ">
+            <label for="email" class="form_label">Email:</label>
+            <span class="form_line"></span>
+        </div>
+
+        <div class="form_group">
+            <input type="text" id="telefono" class="form_input" placeholder=" ">
+            <label for="telefono" class="form_label">Telefono</label>
+            <span class="form_line"></span>
+        </div>
+
+        <div class="form_group">
+            <textarea class="form_input form_textarea" id="mensaje" placeholder=" "></textarea> 
+            <label for="mensaje" class="form_label">Escribe tu mensaje</label>
+            <span class="form_line form_textarea-line"></span>
+        </div>
+
+        <input type="submit" class="form_submit" value="Enviar">
+
+    </div>
+</form>
+
+
+<footer class="footer">
         <section class="footer__container">
             <div class="footer__services column1">
                 <h3 class="footer__services-title">institucional</h3>

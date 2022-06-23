@@ -29,9 +29,12 @@ html {
 body {
   font-family: 'Raleway', sans-serif;
   background-color: var(--grayish-color);
-  display: grid;
+  display: flex;
+  flex-direction: column;
   grid-template-rows: repeat(3, max-content);
-  gap: 2em; }
+  gap: 2em;
+  height: 100vh;
+  margin: 0; }
 
 /**
    * Render the `main` element consistently in IE.
@@ -396,12 +399,15 @@ template {
     --clippy:polygon(0 0, 100% 0, 100% 100%, 0 100%);
     color: #fff; }
   .nav__title {
-    font-size: 1rem; } }
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: red; } }
 
 .footer__container {
   display: flex;
   background: var(--pica-color);
-  flex-direction: column; }
+  flex-direction: column;
+  margin-top: auto; }
 
 .footer__services {
   display: flex;
@@ -470,9 +476,82 @@ template {
   width: 15rem;
   border-radius: 10px; }
 
-.main__container {
-  height: 100%vh;
-  width: 70%; }
+.form_textarea {
+  max-width: 25rem;
+  max-height: 8rem; }
+  .form_textarea::-webkit-scrollbar {
+    display: none; }
+
+.form {
+  background: #f7c2c2;
+  margin: auto;
+  width: 90%;
+  max-width: 400px;
+  padding: 4.5em 3em;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center; }
+  .form_title {
+    font-size: 2rem;
+    margin-bottom: .5em; }
+  .form_container {
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em; }
+  .form_group {
+    position: relative;
+    --color: #181c1c7e; }
+  .form_input {
+    width: 100%;
+    background: none;
+    font-size: .8rem;
+    background-color: none;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color); }
+  .form_input:focus, .form_input:not(:placeholder-shown) {
+    color: #4d4646; }
+  .form_input:focus + .form_label,
+  .form_input:not(:placeholder-shown) + .form_label {
+    transform: translateY(-12px) scale(0.7);
+    transform-origin: left top;
+    color: #fff; }
+  .form_label {
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s; }
+  .form_submit {
+    background: var(--pica-color);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em; }
+  .form_line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ff8080;
+    transform: scale(0);
+    transform: left bottom; }
+  .form_input:focus ~ .form_line,
+  .form_input:not(:placeholder-shown) ~ .form_line {
+    transform: scale(1); }
+
+@media (max-width: 425) {
+  .form_titlle {
+    font-size: 1.8rem; } }
+
+.form_textarea-line {
+  background-color: #f7c2c2; }
 
 .galeria {
   display: grid;
@@ -593,7 +672,9 @@ template {
 .pregtf {
   width: 90%;
   background: #f7c2c2;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6); }
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+  margin: auto;
+  padding-left: 15px; }
 
 .title_pf {
   width: 30%;
@@ -633,8 +714,11 @@ template {
 
 .rstron {
   width: 90%;
-  height: 900px;
-  background: #f7c2c2; }
+  height: 1250px;
+  background: #f7c2c2;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   .rstron_title {
     text-align: center;
     padding: 90px; }
