@@ -1,32 +1,50 @@
 .pregtf{
+    display: grid;
+    gap: 2em;
     width: 90%;
+    min-width: 320px;
+    text-align: center;
     background: #f7c2c2;
     box-shadow: 0 0 6px rgba(0, 0, 0, .6);
     margin: auto;
-    padding-left: 15px;
+    padding: 50px 0;
+    
+}
+
+.container_text{
+    margin: 90px 0;
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #c065c0;
+    border-radius: 5px;
+}
+
+.container_title{
+    padding-top: 25px;
+    font-weight: bolder;
 }
 
 
-
 .title_pf{
-    width: 30%;
+    width: max-content;
     padding: 1.5em 1.5em;
     margin: 1.5em auto;
     text-align: center;
-    font-weight: 500;
-    font-size: large;
     background: var(--pica-color) ;
     border-radius: 5px;
     color: rgb(215, 217, 250);
 }
 
-.container_text{
-    margin: 90px 0;
-}
 
 @media (min-width: 650px){
     .title_pf{
-        font-size: x-large;
-        font-weight: 900;
+        font-size: xx-large;
+        font-weight: 100;
+}
+
+.contianer_paragraph{
+    line-height: 2em;
+    font-size: x-large;
+
 }
 }
